@@ -32,8 +32,8 @@
     <meta name="twitter:title" content="{{ page.title }}">
     <meta name="twitter:description" content="{{ page.description }}">
     <meta name="twitter:image" content="{{ page.imageurl }}">
-  
-  </head>        
+
+  </head>
   <body>
 
     <div class="off-canvas-wrapper">
@@ -62,14 +62,10 @@
             <div class="row column">
 
               {{ content }}
-              
+
             </div>
             <footer class="site-footer row column mtl" role="contentinfo">
               <hr/>
-              <ul class="menu quiet copyright align-right">
-                <li><a href="https://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter"></i>@{{ site.twitter }}</a></li>
-                <li><a href="https://github.com/{{ site.github }}/"><i class="fa fa-github"></i>@{{ site.github }}</a></li>
-              </ul>
               <ul class="menu quiet">
                 {% include nav.html %}
               </ul>

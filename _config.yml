@@ -1,13 +1,7 @@
-name : Foundation5/github pages/Jykill starter
-brand : My Project
+name : Parc Botannia
+brand : Parc Botannia
 description : This is the description of my project
-keyword : 
-url : http://daigofuji.github.io/jekyll-foundation-6-starter/
-email : daigo@daigofujiwara.com
-twitter : DaigoFuji
-github : DaigoFuji
-author : Daigo Fujiwara
+keyword :
 year : 2016
-markdown : kramdown
 exclude :
   - node_modules
