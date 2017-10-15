@@ -1,12 +1,75 @@
+$dark: #003D3F
+$light: #327A7F
+$generic: #F2F2F2
+
+p
+  font-family: 'Montserrat', sans-serif
+
+h1,h2,h3,h4,h5,h6
+  font-family: 'Volkhov', serif
+
+h2
+  font-size: 64px
+  @media screen and (max-width: 63.9375em)
+    font-size: 40px
+
+.first-segment
+  padding-top: 200px
+.content
+  @media screen and (max-width: 39.9375em)
+    padding-top: 220px
 .hero
-  background-position: center center
+  background-position: center right
   background-repeat: no-repeat
   background-size: cover
   background-image: url('../img/parc-botannia.jpg')
   height: 100vh
+  @media screen and (max-width: 39.9375em)
+    height: 30vh
+  .button
+    background: white
+    border: 1px solid $dark
+    border-radius: 5px
+    &:hover
+      color: $dark
+  h2
+    color: $dark
+    font-weight: bold
+  a, p
+    color: $light
+    font-weight: bold
+  .first-segment
+    max-width: 90%
 .title-bar
-  position: fixed
+  position: absolute
   background: transparent
+  box-shadow: none
+  width: 100%
+  padding: 0
+  .title-bar-left
+    position: relative
+    top: 50px
+  .title-bar-right
+    width: 50%
+    position: absolute
+    bottom: 0
+    right: 0
+    @media screen and (max-width: 39.9375em)
+      width: auto
+    .dark-green
+      padding: 0 30px
+      background: $dark
+      border: transparent
+      border-radius: 10px 0 0 10px
+      @media screen and (max-width: 39.9375em)
+        padding: 0 0
+    hr
+      margin: 5px
+      border-color: $dark
+    a
+      color: white
+      font-weight: bold
+      font-size: 20px
 .title-bar-title
   img
     width: 100%
