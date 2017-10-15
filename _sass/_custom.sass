@@ -2,7 +2,14 @@ $dark: #003D3F
 $light: #327A7F
 $generic: #F2F2F2
 
-p
+.small-pad-s
+  @media screen and (max-width: 39.9375em)
+    padding-top: 10px
+
+body
+  background: $generic
+
+p, label
   font-family: 'Montserrat', sans-serif
 
 h1,h2,h3,h4,h5,h6
@@ -16,6 +23,7 @@ h2
 .first-segment
   padding-top: 200px
 .content
+  background: $generic
   @media screen and (max-width: 39.9375em)
     padding-top: 220px
 .hero
@@ -73,3 +81,29 @@ h2
 .title-bar-title
   img
     width: 100%
+
+
+// Contact page css
+
+.padding-first
+  @media screen and (min-width: 39.9375em)
+    padding-top: 220px
+.contact
+  p, label, input, legend
+    color: $dark
+  label
+    font-size: 18px
+  input, textarea
+    background: transparent
+    border: 1px solid $dark
+  .button
+    background: $dark
+    padding: 10px 30px
+    border-radius: 5px
+    color: white
+  .contact-details
+    @media screen and (max-width: 39.9375em)
+      padding: 0
+    p
+      font-size: 11px
+      margin: 0

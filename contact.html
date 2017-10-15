@@ -1,9 +1,81 @@
 ---
 layout: default
-title: Home
+title: Showroom
 description: Parc Botannia
 keywords: Parc Botannia, Condominium, A home with nature
 permalink: /contact/
 ---
 
-<h1> Contact Page </h1>
+<div class="padding-first contact">
+  <div class="row">
+    <div class="small-12 medium-6 columns contact-details">
+      <img src="{{site.url}}img/parc-botannia-2.jpg" alt="Parc Botannia">
+      <div class="hide-for-small-only">
+        <h2> Contact </h2>
+        <p>Sing Holdings Limited</p>
+        <p>96 Robinson Road</p>
+        <p>#10-01 SIF Building</p>
+        <p>Singapore 068899</p>
+        <br>
+        <p>Tel: (65) 65366696</p>
+        <p>Fax: (65) 65366620</p>
+        <p>Email:
+          <a href="mailto:enquiries@singholdings.com">enquiries@singholdings.com</a>
+        </p>
+        <p>Website:
+          <a href="http://www.singholdings.com/" target="_blank">www.singholdings.com</a>
+        </p>
+      </div>
+    </div>
+    <div class="small-12 medium-6 columns small-pad-s">
+      <form data-abide novalidate action="https://formspree.io/isaac@atzen.co"
+            method="POST">
+          <div data-abide-error class="alert callout" style="display: none;">
+            <p><i class="fi-alert"></i> There are some errors in your form.</p>
+          </div>
+          <label for="name"> Name: *
+            <input type="text" name="name" required pattern="[a-zA-Z]+">
+            <span class="form-error">
+              Please ensure that your name only contains letters from A-Z.
+            </span>
+          </label>
+          <label for="number"> Contact No: *
+            <input type="number" required name="phone">
+            <span class="form-error">
+              Please ensure that this field only contains numbers.
+            </span>
+          </label>
+          <label for="email"> Email: *
+            <input type="email" required name="_replyto">
+            <span class="form-error">
+              Please ensure that this is a valid email address.
+            </span>
+          </label>
+          <label for="purpose"> Purpose of purchase: *
+            <input type="text" required name="purpose" placeholder="Own Occupation or Investment etc.">
+            <span class="form-error">
+              Please ensure that this is a valid email address.
+            </span>
+          </label>
+          <fieldset>
+            <legend>I am interested in the following unit type(s)</legend>
+            <input name= "1_bedroom" id="checkbox1" type="checkbox"><label for="checkbox1">1 Bedroom</label>
+            <input name= "2_bedroom" id="checkbox2" type="checkbox"><label for="checkbox2">2 Bedroom</label>
+            <input name= "3_bedroom" id="checkbox3" type="checkbox"><label for="checkbox3">3 Bedroom</label>
+            <input name= "4_bedroom" id="checkbox4" type="checkbox"><label for="checkbox4">4 Bedroom</label>
+            <input name= "5_bedroom" id="checkbox5" type="checkbox"><label for="checkbox5">5 Bedroom</label>
+          </fieldset>
+          <label for="remarks"> Remarks
+            <textarea name="remarks" style="height: 150px"></textarea>
+          </label>
+          <p style="font-size: 9px">*Required Fields</p>
+          <fieldset>
+            <legend> Upon submitting the form, permission is given for Sing Holdings Limited, Wee Hur Holdings Ltd and their appointed agents to call, SMS, or email you on information/updates pertaining to this residential project. </legend>
+            <input type="radio" name="agreement" value="yes" id="agreement" required><label for="agreement">I agree.</label>
+          </fieldset>
+          <br>
+          <input type="submit" value="Register your visit" class="button">
+      </form>
+    </div>
+  </div>
+</div>
