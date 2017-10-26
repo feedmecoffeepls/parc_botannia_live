@@ -68,11 +68,16 @@ h2
   .title-bar-left
     position: relative
     top: 50px
+    img
+      @media screen and (min-width: 40em) and (max-width: 63.9375em)
+        width: 65%
   .title-bar-right
-    width: 50%
+    width: 60%
     position: absolute
     bottom: 0
     right: 0
+    @media screen and (min-width: 40em) and (max-width: 63.9375em)
+      width: 70%
     @media screen and (max-width: 39.9375em)
       width: auto
     .dark-green
@@ -86,6 +91,8 @@ h2
       margin: 5px
       border-color: $dark
     a
+      @media screen and (min-width: 40em) and (max-width: 63.9375em)
+        font-size: 14px
       color: white
       font-weight: bold
       font-size: 20px
