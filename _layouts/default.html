@@ -36,6 +36,7 @@
     <meta name="twitter:title" content="{{ page.title }}">
     <meta name="twitter:description" content="{{ page.description }}">
     <meta name="twitter:image" content="{{ page.imageurl }}">
+    <link href="{{site.url}}css/lightbox.min.css" rel="stylesheet">
 
   </head>
   <body>
@@ -105,6 +106,15 @@
     <script src="{{site.url}}bower_components/what-input/what-input.js"></script>
     <script src="{{site.url}}bower_components/foundation-sites/dist/foundation.js"></script>
     <script src="{{site.url}}js/app.js"></script>
+    <script src="{{site.url}}js/lightbox.min.js"></script>
+    <script>
+      lightbox.option({
+        'resizeDuration': 200,
+        'fadeDuration' : 300,
+        'wrapAround': true,
+        'disableScrolling' : true
+      })
+    </script>
 
   </body>
 </html>
