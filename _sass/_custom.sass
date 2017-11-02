@@ -28,7 +28,7 @@ body
 
 p, label, a, li
   font-family: 'Montserrat', sans-serif
-  letter-spacing: 0.1em
+  letter-spacing: 1px
 
 h1,h2,h3,h4,h5,h6
   font-family: 'Volkhov', serif
@@ -62,7 +62,8 @@ h2
   @media screen and (max-width: 39.9375em)
     background-image: url('../img/parc-botannia.jpg')
     height: 30vh
-    background-position: center center
+    min-height: initial
+    background-position: center 25%
   @media screen and (min-width: 40em) and (max-width: 63.9375em)
     background-image: url('../img/parc-botannia.jpg')
   .button
@@ -176,3 +177,14 @@ footer
   padding: 40px 0px
   h1,h2,h3,h4,h5,h6,p
     color: $dark
+
+
+.floorplan
+  i
+    font-size: 32px
+    color: $dark
+    cursor: pointer
+
+.siteplan
+  li
+    font-size: 12px
