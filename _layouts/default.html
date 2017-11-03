@@ -125,41 +125,59 @@
         'disableScrolling' : true
       })
     </script>
-    <script>
-    $(".search").on("click",function(){
-      var height = document.getElementById('mybook').offsetWidth/2/1417*1919;
-      var id = parseInt($(this).attr('id'));
-      console.log(height);
-      $(function() {
-        //single book
-        $('#mybook').booklet({
-          pagePadding: 0,
-          width: "100%",
-          height: height,
-          speed: 250,
-          next: '#right-arrow',
-          prev: '#left-arrow',
-          startingPage: id
+    {% if page.url =="/floorplan/" %}
+      <script>
+      $(".search").on("click",function(){
+        var height = document.getElementById('mybook').offsetWidth/2/1417*1919;
+        var id = parseInt($(this).attr('id'));
+        console.log(height);
+        $(function() {
+          //single book
+          $('#mybook').booklet({
+            pagePadding: 0,
+            width: "100%",
+            height: height,
+            speed: 250,
+            next: '#right-arrow',
+            prev: '#left-arrow',
+            startingPage: id
+          });
         });
       });
-    });
-    $(document).ready(function(){
-      var height = document.getElementById('mybook').offsetWidth/2/1417*1919;
-      console.log(height);
-      $(function() {
-        //single book
-        $('#mybook').booklet({
-          pagePadding: 0,
-          width: "100%",
-          height: height,
-          speed: 250,
-          next: '#right-arrow',
-          prev: '#left-arrow',
-          startingPage: 7
+      $(document).ready(function(){
+        var height = document.getElementById('mybook').offsetWidth/2/1417*1919;
+        console.log(height);
+          //single book
+          $('#mybook').booklet({
+            pagePadding: 0,
+            width: "100%",
+            height: height,
+            speed: 250,
+            next: '#right-arrow',
+            prev: '#left-arrow',
+            startingPage: 7
+          });
         });
-      });
-    })
-    </script>
+      </script>
+    {% endif %}
+
+    {% if page.url =="/brochure/" %}
+      <script>
+      $(document).ready(function(){
+        var height = document.getElementById('mybook2').offsetWidth/2/1417*1919;
+        console.log(height);
+          //single book
+          $('#mybook2').booklet({
+            pagePadding: 0,
+            width: "100%",
+            height: height,
+            speed: 250,
+            next: '#right-arrow2',
+            prev: '#left-arrow2'
+          });
+        });
+      </script>
+    {% endif %}
 
   </body>
 </html>
