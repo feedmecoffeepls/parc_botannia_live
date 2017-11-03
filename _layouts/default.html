@@ -126,21 +126,6 @@
       })
     </script>
     <script>
-    window.onresize = function(){
-      var height = document.getElementById('mybook').offsetWidth/2/1417*1919;
-      console.log(height);
-      $(function() {
-        //single book
-        $('#mybook').booklet({
-          pagePadding: 0,
-          width: "100%",
-          height: height,
-          speed: 250,
-          next: '#right-arrow',
-          prev: '#left-arrow'
-        });
-      });
-    };
     $(".search").on("click",function(){
       var height = document.getElementById('mybook').offsetWidth/2/1417*1919;
       var id = parseInt($(this).attr('id'));
