@@ -140,7 +140,7 @@
     <script>
 
       $(window).scroll(function() {
-          if ( $(window).scrollTop()) {
+          if ( $(window).scrollTop() > 0) {
             $(".hidden-title-bar").slideDown();
           } else {
             $(".hidden-title-bar").slideUp();
