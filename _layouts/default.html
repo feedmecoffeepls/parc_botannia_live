@@ -53,9 +53,21 @@
             {% include nav.html %}
           </ul>
         </div>
-
         <div class="off-canvas-content" data-off-canvas-content style="box-shadow: none">
-
+          <div class="title-bar hidden-title-bar show-for-large">
+            <div class="title-bar-left">
+              <span class="title-bar-title mas"><a href="{{ site.url }}"><img src="{{site.url}}{{site.logo-url}}"></a></span>
+            </div>
+            <div class="title-bar-right mts">
+              <div class="dark-green">
+                <ul class="menu quiet show-for-large">
+                  {% include nav.html %}
+                </ul>
+                <button class="menu-icon quiet hide-for-large" type="button" data-toggle="offCanvasRight"><i class="fa fa-bars" aria-hidden="true" style="font-size: 32px; padding: 10px"></i></button>
+              </div>
+              <hr class="show-for-large"/>
+            </div>
+          </div>
           <div class="title-bar">
             <div class="title-bar-left">
               <span class="title-bar-title mas"><a href="{{ site.url }}"><img src="{{site.url}}{{site.logo-url}}"></a></span>
@@ -124,6 +136,16 @@
         'wrapAround': true,
         'disableScrolling' : true
       })
+    </script>
+    <script>
+
+      $(window).scroll(function() {
+          if ( $(window).scrollTop()) {
+            $(".hidden-title-bar").slideDown();
+          } else {
+            $(".hidden-title-bar").slideUp();
+          }
+      });
     </script>
     {% if page.url =="/floorplan/" %}
       <script>
