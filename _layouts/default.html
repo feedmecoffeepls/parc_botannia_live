@@ -62,12 +62,12 @@
             </div>
             <div class="title-bar-right mts">
               <div class="dark-green">
-                <ul class="menu quiet show-for-medium">
+                <ul class="menu quiet show-for-large">
                   {% include nav.html %}
                 </ul>
-                <button class="menu-icon quiet hide-for-medium" type="button" data-toggle="offCanvasRight"><i class="fa fa-bars" aria-hidden="true" style="font-size: 32px; padding: 10px"></i></button>
+                <button class="menu-icon quiet hide-for-large" type="button" data-toggle="offCanvasRight"><i class="fa fa-bars" aria-hidden="true" style="font-size: 32px; padding: 10px"></i></button>
               </div>
-              <hr class="show-for-medium"/>
+              <hr class="show-for-large"/>
             </div>
           </div>
           <div class="content">
@@ -154,7 +154,8 @@
           height: height,
           speed: 250,
           next: '#right-arrow',
-          prev: '#left-arrow'
+          prev: '#left-arrow',
+          startingPage: 7
         });
       });
     })
